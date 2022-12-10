@@ -202,27 +202,19 @@ try:
 	indox()
 	try:os.remove('.proxy.txt')
 	except:pass
-	A = ''
-	one = ses.get('https://spys.me/socks.txt').text
-	for x in one.splitlines():
-		if '+' in x:
-			if '.' in x:
-				p = x.split(' ')[0]
-				A += '\n'+p
+	#A = ''
+	#one = ses.get('https://spys.me/socks.txt').text
+	#for x in one.splitlines():
+	#	if '+' in x:
+	#		if '.' in x:
+	#			p = x.split(' ')[0]
+	#			A += '\n'+p
 	uno = ses.get("https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all").text
 	open('.proxy.txt','w').write(uno)
 except requests.exceptions.ConnectionError:
 	sys.exit(f" [{M}>{LG}] tidak ada koneksi internet")
 
-try:
-	prox2= requests.get('https://github.com/jorgenkg/python-proxy-rotator/blob/master/proxy/proxylist.txt').text
-	open('.prox.txt','w').write(prox2)
-except KeyError:
-	print('GAGAL')
-prox=open('.prox.txt','r').read().splitlines()
-popok = random.choice([prox])
-
-for xd in range(10000):
+for xd in range(1000):
     build_nokiax = ['JDQ39','JZO54K']
     rr = random.randint; rc = random.choice
     miui_v3 = ['-g','-gn','-go','-gn','gzip(gfe)',' swan-mibrowser']
@@ -234,69 +226,92 @@ for xd in range(10000):
     ugent1 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; {str(rc(gt))}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(100,104))}.0.{str(rr(3900,4900))}.{str(rr(40,150))} Mobile Safari/537.36 {str(rc(aZ))}{str(rr(1,1000))}"
     ugent2 = f"Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/{str(rc(build_nokiax))}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(100,104))}.0.{str(rr(3900,4900))}.{str(rr(40,150))} Mobile Safari/537.36 NokiaBrowser/7.{str(rr(1,5))}.1.{str(rr(16,37))} {str(rc(aZ))}{str(rr(1,1000))}"
     ugent3 = f"Mozilla/5.0 (Linux; U; Android {str(rr(4,12))}; {str(rc(basa))}; Redmi 5 Plus Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(40,104))}.0.{str(rr(3900,4900))}.{str(rr(40,150))} Mobile Safari/537.36 XiaoMi/MiuiBrowser/{str(rr(1,99))}.{str(rc(miui_v1))}.{str(rc(miui_v2))}{str(rc(miui_v3))} {str(rc(aZ))}{str(rr(1,1000))}"
-    memekk = random.choice([ugent1, ugent2, ugent3])
+    ugent4 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-A102U Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.136 Mobile Safari/537.36 Instagram {str(rr(111,999))}.0.0.37.107 Android (28/{str(rr(4,12))}; 320dpi; 720x1468; samsung; SM-A102U; a10e; exynos7885; en_US; 239490550)"
+    ugent5 = f"Mozilla/5.0 (Linux; Android {str(rr(11,12))}; Nokia 2.4 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36 Instagram 214.1.0.29.120 Android (30/{str(rr(11,12))}; 280dpi; 720x1529; HMD Global/Nokia; Nokia 2.4; WVR_sprout; mt6762; es_MX; 333717253)"
+    ugent6 = f"Mozilla/5.0 (iPhone; CPU iPhone OS {str(rr(4,12))}_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram {str(rr(111,999))}.0.0.25.121 (iPhone{str(rr(4,12))},8; iOS {str(rr(4,12))}_1_3; en_US; en-US; scale=2.00; 828x1792; 180988914"
+    memekk = random.choice([ugent1, ugent2, ugent3, ugent4, ugent5, ugent6])
     ugen.append(memekk)
-
-
-for x in range(10000):
+    
+for t in range(10000):
+	aa='mozilla-5-0-linux-android-8-1-0;'
+	b=random.choice(['8.1.0','4','5','6','7','8','9','10','11','12'])
+	c='zh-CN; MZ-m3'
+	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	e=random.randrange(1, 999)
+	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	g='build-o11019-applewebkit-537-36-khtml-like-gecko-chrome-81-0-4044-138-mobile-safari-537-364044-138-mobile-safari-537-36'
+	h=random.randrange(73,100)
+	i='0'
+	j=random.randrange(4200,4900)
+	k=random.randrange(40,150)
+	l='Mobile Safari\/537.36'
+	uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
+	ugen5.append(uaku)
+	    
+for t in range(10000):
+	aa='mozilla-5-0-linux-android-8-1-0;'
+	b=random.choice(['8.1.0','4','5','6','7','8','9','10','11','12'])
+	c='zh-CN; MZ-m3'
+	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	e=random.randrange(1, 999)
+	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	g='build-o11019-applewebkit-537-36-khtml-like-gecko-chrome-81-0-4044-138-mobile-safari-537-364044-138-mobile-safari-537-36'
+	h=random.randrange(73,100)
+	i='0'
+	j=random.randrange(4200,4900)
+	k=random.randrange(40,150)
+	l='Mobile Safari\/537.36'
+	uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
+	ugen5.append(uaku)
+	
+	
+	aa='Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.68 like Chrome/39.0.2171.93 Safari/537.36',
+	b=random.choice(['6','7','8','9','10','11','12'])
+	c=' en-us;'
+	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	e=random.randrange(1, 999)
+	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	h=random.randrange(73,100)
+	i='0'
+	j=random.randrange(4200,4900)
+	k=random.randrange(40,150)
+	l='Mobile Safari/537.36'
+	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
+	ugen.append(uaku2)
+	
+for x in range(999):
 	rc = random.choice
 	rr = random.randint
 	aZ = ['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-	A = f'Mozilla/5.0 (Linux; Android {str(rr(8,10))}; Redmi {str(rr(4,9))} Build/PPR1.'
-	B = f'{str(rr(111111,199999))}.011; en-us) AppleWebKit/537.36 '
-	C = f'(KHTML, like Gecko) UCBrowser/79.0.{str(rr(1111,9999))}.136 Mobile Safari'
-	D = f'/537.36 Puffin/9.7.2.{str(rr(11111,99999))}AP'
-	pf = f'{A}{B}{C}{D}'
-	if pf in redmi:pass
-	else:redmi.append(pf)
-	A = f'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0; Android {str(rr(7,10))};'
-	B = f' MI 4LTE Build/{str(rc(aZ))}{str(rc(aZ))}{str(rc(aZ))}63{str(rc(aZ))}; ) AppleWebKit/537.36 (KHTML, like Gecko) UCBrowser/'
-	C = f'10.9.2.{str(rr(111,999))} U3/0.8.0 Mobile Safari/534.30'
-	mi = f'{A}{B}{C}'
-	if mi in redmi:pass
-	else:redmi.append(mi)
-	A = f'Mozilla/5.0 (Linux; U; Android 18; zh-CN; MZ-meizu 17 Bui ld/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.7.6 787.(756 MZBrowser/9.14.1 Mobile Safari/537.36'
+#	A = f'Mozilla/5.0 (Linux; Android {str(rr(8,10))}; Redmi {str(rr(4,9))} Build/PPR1.'
+#	B = f'{str(rr(111111,199999))}.011; en-us) AppleWebKit/537.36 '
+#	C = f'(KHTML, like Gecko) UCBrowser/79.0.{str(rr(1111,9999))}.136 Mobile Safari'
+#	D = f'/537.36 Puffin/9.7.2.{str(rr(11111,99999))}AP'
+#	pf = f'{A}{B}{C}{D}'
+#	if pf in redmi:pass
+#	else:redmi.append(pf)
+#	A = f'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0; Android {str(rr(7,10))};'
+#	B = f' MI 4LTE Build/{str(rc(aZ))}{str(rc(aZ))}{str(rc(aZ))}63{str(rc(aZ))}; ) AppleWebKit/537.36 (KHTML, like Gecko) UCBrowser/'
+#	C = f'10.9.2.{str(rr(111,999))} U3/0.8.0 Mobile Safari/534.30'
+#	mi = f'{A}{B}{C}'
+#	if mi in redmi:pass
+#	else:redmi.append(mi)
+	A = f'Mozilla/5.0 (Linux; Android 8; MHA-L29 Build/U223J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4423.120 58.0.3029.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/127.0.0.22.69;]'
 	B = f'{str(rc(aZ))}{str(rc(aZ))}{str(rc(aZ))}{str(rr(11,99))}{str(rc(aZ))}'
 	C = f'{str(rr(30,57))} Build/{B}) AppleWebKit/537.36 (KHTML, like Gecko)'
 	D = f' Version/4.0 Chrome/{str(rr(20,100))}.0.{str(rr(1111,9999))}.80 Mobile Safari/'
 	E = f'537.36 HeyTapBrowser/{str(rr(2,40))}.7.36.1'
-	F = f'{A}{B}{C}{D}{E}'
+	F = f'{A}{C}{D}{E}'
 	if F in redmi:pass
 	else:redmi.append(F)
 
 
-for y in range(10000):
-	rc = random.choice
-	rr = random.randint
-	aZ = ['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-	A = f'Mozilla/5.0 (Linux; Android {str(rr(8,10))}; Redmi {str(rr(4,9))} Build/PPR1.'
-	B = f'{str(rr(111111,199999))}.011; en-us) AppleWebKit/537.36 '
-	C = f'(KHTML, like Gecko) UCBrowser/79.0.{str(rr(1111,9999))}.136 Mobile Safari'
-	D = f'/537.36 Puffin/9.7.2.{str(rr(11111,99999))}AP'
-	pf = f'{A}{B}{C}{D}'
-	if pf in redmi:pass
-	else:redmi.append(pf)
-	A = f'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0; Android {str(rr(7,10))};'
-	B = f' MI 4LTE Build/{str(rc(aZ))}{str(rc(aZ))}{str(rc(aZ))}63{str(rc(aZ))}; ) AppleWebKit/537.36 (KHTML, like Gecko) UCBrowser/'
-	C = f'10.9.2.{str(rr(111,999))} U3/0.8.0 Mobile Safari/534.30'
-	mi = f'{A}{B}{C}'
-	if mi in redmi:pass
-	else:redmi.append(mi)
-	A = f'Mozilla/5.0 (Linux; U; Android 18; zh-CN; MZ-meizu 17 Bui ld/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.7.6 787.(756 MZBrowser/9.14.1 Mobile Safari/537.36'
-	B = f'{str(rc(aZ))}{str(rc(aZ))}{str(rc(aZ))}{str(rr(11,99))}{str(rc(aZ))}'
-	C = f'{str(rr(30,57))} Build/{B}) AppleWebKit/537.36 (KHTML, like Gecko)'
-	D = f' Version/4.0 Chrome/{str(rr(20,100))}.0.{str(rr(1111,9999))}.80 Mobile Safari/'
-	E = f'537.36 HeyTapBrowser/{str(rr(2,40))}.7.36.1'
-	F = f'{A}{B}{C}{D}{E}'
-	if F in redmi:pass
-	else:redmi.append(F)
-
-
-try:abcd = open('ua.txt','r').read().splitlines()
+try:abcd = open('.proxy.txt','r').read().splitlines()
 except:sys.exit(f" [{RD}>{RD}] Gagal...")
 
 welcome=f'''{OE}[{GN}•{OE}] {LG}Nama Pemilik : {GN}Dodheles{N}
-{OE}[{GN}•{OE}] {LG}Total Proxy  : {GN}{str(len(popok))}{N}
+{OE}[{GN}•{OE}] {LG}Total Proxy  : {GN}{str(len(abcd))}{N}
 {OE}[{GN}•{OE}] {LG}Total Ugent  : {GN}{str(len(redmi))}{N}
 {OE}[{GN}•{OE}] {LG}Status Script: {GN}Beta{N}
 {OE}[{GN}•{OE}] {LG}Whatsapp     : {GN}+30 694 532 6196{N}
